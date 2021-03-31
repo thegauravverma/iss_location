@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Where is ISS Now?</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Footer-Basic.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/aos.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Navigation-with-Button.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" data-aos="fade-up" style="background: rgb(27,25,25);opacity: 0.52;">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><input class="form-control-plaintext" type="text" value="The ISS is travelling at the speed of 27580km/hr, refreshing this page will change the city displayed." readonly="" style="color: rgb(234,240,247);">
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mr-auto"></ul><button class="btn btn-primary" type="button" style="background: rgb(50,51,52);border-color: rgb(109,119,135);border-bottom-color: rgb(98,102,108);box-shadow: inset 0px 0px 6px;font-size: 20px;" onClick="window.location.reload();">Refresh</button><span class="navbar-text actions" style="color: rgba(247,241,241,0.5);"> </span>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" id="details" style="opacity: 0.57;">
+        <h1 style="text-align: center;filter: contrast(200%);">{{ location }}</h1>
+        <h1 style="filter: contrast(200%);">{{ coordinates }}</h1>
+        <h1 style="filter: contrast(200%);">{{ time }}</h1>
+    </div>
+
+
+    <footer id="footer" class="footer-basic" style="opacity: 0.54;">
+        <div class="social" style="text-align: center;filter: contrast(200%);"><ul>
+    <li>Made with ❤ by</li>
+    <li><a href="https://github.com/thegauravverma"> Gaurav Verma</a></li>
+    <li><a href="https://github.com/Sphoortikadapa">Sphoorti Kadapa</a></li>
+</ul></div>
+        <p class="copyright" style="margin: 0px;">Creative Commons License</p>
+    </footer>
+    <div></div>
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bs-init.js') }}"></script>
+    <script src="{{ url_for('static', filename='bootstrap/js/aos.js') }}"></script>
+
+</body>
+
+</html>
